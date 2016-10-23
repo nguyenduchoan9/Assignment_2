@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Article</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="sort_order">
+        <item>Oldest</item>
+        <item>Newest</item>
+    </string-array>
+</resources>

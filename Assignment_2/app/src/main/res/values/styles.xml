@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/StatusBarArticleDetail</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/StatusBarArticleDetail</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyDialogStyle" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:dialogTheme">@style/AppDialogTheme</item>
+        <!--<item name="android:windowBackground">@color/StatusBarArticleDetail</item>-->
+        <!--<item name="android:textColor">@color/mdtp_white</item>-->
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <!-- ...other stuff here... -->
+    </style>
+
+    <style name="DialogWindowTitle" parent="Base.DialogWindowTitle.AppCompat">
+        <item name="android:background">@color/StatusBarArticleDetail</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/mdtp_white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/DialogWindowTitleText</item>
+    </style>
+    <style name="DialogWindowTitleText" parent="@android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+</resources>
